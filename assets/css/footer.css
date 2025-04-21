@@ -1,0 +1,146 @@
+.footer {
+    background: #fff;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+.footer-brand img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #4169e1;
+    color: white;
+}
+
+.footer-links h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4169e1;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.footer-newsletter {
+    margin-top: 30px;
+}
+
+.footer-newsletter h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #3154b8;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
