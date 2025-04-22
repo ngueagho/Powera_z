@@ -200,7 +200,7 @@ include('includes/header.php');
     </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Testimonials Section
 <section class="testimonials">
     <div class="container">
         <h2>Ce que disent nos utilisateurs</h2>
@@ -212,7 +212,7 @@ include('includes/header.php');
                 <div class="testimonial-author">
                     <img src="assets/images/testimonial-1.jpg" alt="Sophie M.">
                     <div>
-                        <h4>Sophie M.</h4>
+                        <h4> Magloire tallah.</h4>
                         <p>Locataire</p>
                     </div>
                 </div>
@@ -222,9 +222,9 @@ include('includes/header.php');
                     <p>"En tant que propriétaire, je peux facilement gérer mes biens et communiquer avec mes locataires. Une plateforme vraiment complète !"</p>
                 </div>
                 <div class="testimonial-author">
-                    <img src="assets/images/testimonial-2.jpg" alt="Thomas L.">
+                    <img src="assets/images/testimonial-1.jpg" alt="Thomas L.">
                     <div>
-                        <h4>Thomas L.</h4>
+                        <h4> Lontsi Lambou.</h4>
                         <p>Propriétaire</p>
                     </div>
                 </div>
@@ -234,16 +234,517 @@ include('includes/header.php');
                     <p>"Le système de messagerie et d'appels vidéo m'a permis de visiter plusieurs logements à distance. Vraiment pratique !"</p>
                 </div>
                 <div class="testimonial-author">
-                    <img src="assets/images/testimonial-3.jpg" alt="Julie K.">
+                    <img src="assets/images/testimonial-1.jpg" alt="Julie K.">
                     <div>
-                        <h4>Julie K.</h4>
+                        <h4>Julie Kamga.</h4>
                         <p>Locataire</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section> -->
+<!-- testimonials.php - Improved design for testimonials section -->
+
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Ce que disent nos utilisateurs</h2>
+            <p class="section-subtitle">Des témoignages authentiques de notre communauté</p>
+        </div>
+        
+        <div class="testimonial-controls">
+            <button id="prev-testimonial" class="testimonial-control-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-testimonial" class="testimonial-control-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonials-wrapper">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            J'ai trouvé mon appartement en seulement quelques jours grâce à HouseConnect. Le processus était simple et rapide !
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonials/testimonial-1.jpg" alt="Magloire Talla.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie M.</h4>
+                            <p>Locataire</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            En tant que propriétaire, j'apprécie la facilité avec laquelle je peux gérer mes annonces et communiquer avec mes locataires. Une plateforme vraiment complète !
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonials/testimonial-1.jpg" alt="kamga L.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Thomas L.</h4>
+                            <p>Propriétaire</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Grâce aux options de filtrage avancées, j'ai pu trouver exactement le type de logement que je cherchais. La possibilité de visiter virtuellement les logements à distance est vraiment pratique !
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonials/testimonial-1.jpg" alt="Julie Kegne marte.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Julie K.</h4>
+                            <p>Locataire</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            HouseConnect m'a permis de louer mon studio en moins d'une semaine ! Le système de vérification des profils me donne une vraie tranquillité d'esprit.
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonials/testimonial-1.jpg" alt="Pierre Nouanla.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Pierre D.</h4>
+                            <p>Propriétaire</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-indicators">
+            <span class="testimonial-dot active" data-index="0"></span>
+            <span class="testimonial-dot" data-index="1"></span>
+            <span class="testimonial-dot" data-index="2"></span>
+            <span class="testimonial-dot" data-index="3"></span>
+        </div>
+        
+        <div class="testimonial-cta">
+            <p>Vous avez utilisé HouseConnect ? Partagez votre expérience</p>
+            <a href="contact.php?subject=testimonial" class="btn btn-primary">Laisser un avis</a>
+        </div>
+    </div>
 </section>
+<style>
+/* Improved Testimonials Styles */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    color: #2a4b8d;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.testimonial-control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    color: #3498db;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+}
+
+.testimonial-control-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.testimonials-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    padding: 0 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    display: block;
+}
+
+.testimonial-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #f0f0f0;
+    font-size: 2.5rem;
+    z-index: 0;
+}
+
+.testimonial-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 5px;
+}
+
+.testimonial-rating i {
+    color: #FFD700;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin: 0 0 5px;
+    color: #2a4b8d;
+    font-size: 1.1rem;
+}
+
+.author-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.testimonial-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.testimonial-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimonial-dot.active {
+    background-color: #3498db;
+    transform: scale(1.2);
+}
+
+.testimonial-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #e6f0ff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-cta p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .testimonials-section {
+        padding: 60px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonial-controls {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-content {
+        padding: 25px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .author-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .testimonial-control-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .testimonial-content {
+        padding: 20px;
+    }
+    
+    .quote-icon {
+        font-size: 2rem;
+    }
+    
+    .testimonial-cta {
+        padding: 20px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Testimonials slider functionality
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.testimonial-dot');
+    const prevBtn = document.getElementById('prev-testimonial');
+    const nextBtn = document.getElementById('next-testimonial');
+    
+    let currentIndex = 0;
+    const totalTestimonials = testimonials.length;
+    
+    // Function to show testimonial by index
+    function showTestimonial(index) {
+        // Hide all testimonials
+        testimonials.forEach(testimonial => {
+            testimonial.classList.remove('active');
+        });
+        
+        // Remove active class from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+        
+        // Show the current testimonial and activate corresponding dot
+        testimonials[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % totalTestimonials;
+        showTestimonial(currentIndex);
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+        showTestimonial(currentIndex);
+    }
+    
+    // Add click event to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            showTestimonial(currentIndex);
+        });
+    });
+    
+    // Add click events to navigation buttons
+    if(prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', prevTestimonial);
+        nextBtn.addEventListener('click', nextTestimonial);
+    }
+    
+    // Auto-rotate testimonials every 5 seconds
+    let testimonialInterval = setInterval(nextTestimonial, 5000);
+    
+    // Pause auto-rotation when hovering over testimonials
+    const testimonialsContainer = document.querySelector('.testimonials-container');
+    
+    if(testimonialsContainer) {
+        testimonialsContainer.addEventListener('mouseenter', () => {
+            clearInterval(testimonialInterval);
+        });
+        
+        testimonialsContainer.addEventListener('mouseleave', () => {
+            testimonialInterval = setInterval(nextTestimonial, 5000);
+        });
+    }
+});
+</script>
+
+
+
 
 <!-- Call to Action Section -->
 <section class="cta">

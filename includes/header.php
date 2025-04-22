@@ -36,6 +36,7 @@ $userName = $isLoggedIn ? $_SESSION[SESSION_PREFIX . 'user_name'] : '';
     <link rel="stylesheet" href="<?= $rootPath ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= $rootPath ?>assets/css/responsive.css">
     <link rel="stylesheet" href="<?= $rootPath ?>assets/css/animations.css">
+    <!-- <link rel="stylesheet" href="<?= $rootPath ?>assets/css/footer.css"> -->
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
